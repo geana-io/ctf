@@ -1,0 +1,1570 @@
+export memory f(initial: 256, max: 256);
+
+global g_a:int = 5245120;
+
+export table g:funcref(min: 1, max: 1);
+
+data d_consolelogcWASMVAULTv01fontw(offset: 1024) = 
+  "()<::>{ console.log('%c WASM VAULT v0.1', 'font-weight: bold; font-siz"
+  "e: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 "
+  "rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) "
+  ", 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0"
+  " rgb(42,21,113)'); }\00()<::>{ const val = document.getElementById('pa"
+  "ssword').value; const len = lengthBytesUTF8(val) + 1; const str = _mal"
+  "loc(len); stringToUTF8(val, str, len); return str; }\00(void)<::>{ ale"
+  "rt('YOU SHALL NOT PASS!'); document.getElementById('password').value ="
+  " ''; }\00(const unsigned char* flag)<::>{ alert(`You win! Here is you "
+  "flag: ${UTF8ToString(flag)}`); }";
+data d__WD_l4GoR(offset: 1696) = 
+"\16_\0aW\0bD_\05\1dl\1c\04\03^4G\11\06\06o\07R\18]\0d";
+data d_c(offset: 1724) = "\c0\08P";
+
+import function a_a(a:int):int;
+
+import function a_b();
+
+import function a_c(a:int);
+
+import function a_d():int;
+
+import function a_e();
+
+function f_f(a:int):int {
+  var c:int;
+  var b:int = d_c[0]:int;
+  a = b + (c = a + 3 & -4);
+  if (select_if(c >= 1, 0, a <= b)) goto B_a;
+  if (memory_size() << 16 < a) { if (eqz(a_a(a))) goto B_a }
+  d_c[0]:int = a;
+  return b;
+  label B_a:
+  1728[0]:int = 48;
+  return -1;
+}
+
+export function h() {
+  nop
+}
+
+function f_h(a:ubyte_ptr):int {
+  var d:int;
+  var c:int;
+  var c:int;
+  var c:int;
+  var d:int;
+  var b:ubyte_ptr = a;
+  if (eqz(a & 3)) goto B_b;
+  if (eqz(a[0])) { return 0 }
+  loop L_d {
+    b = b + 1;
+    if (eqz(b & 3)) goto B_b;
+    if (b[0]) continue L_d;
+  }
+  goto B_a;
+  label B_b:
+  loop L_e {
+    c = b;
+    b = c + 4;
+    d = c[0]:int;
+    if (eqz(((d ^ -1) & d - 16843009) & -2139062144)) continue L_e;
+  }
+  if (eqz(d & 255)) { return c - a }
+  loop L_g {
+    d = c[1]:ubyte;
+    b = c + 1;
+    c = b;
+    if (d) continue L_g;
+  }
+  label B_a:
+  return b - a;
+}
+
+export function n() {
+  var c:int;
+  var a:{ a:long, b:long, c:long, d:short } = g_a - 32;
+  g_a = a;
+  var b:{ a:ubyte, b:ubyte, c:ubyte, d:ubyte } = a_d();
+  a.d = d__WD_l4GoR[12]:ushort;
+  a.c = d__WD_l4GoR[2]:long;
+  a.b = d__WD_l4GoR[1]:long;
+  a.a = d__WD_l4GoR[0]:long;
+  if (f_h(b) != 4) goto B_b;
+  if (b.a != 112) goto B_b;
+  if (b.b != 51) goto B_b;
+  if (b.c != 107) goto B_b;
+  if (b.d != 48) goto B_b;
+  var d:int = 22;
+  var e:int = a;
+  loop L_c {
+    e[0]:byte = (b + (c & 3))[0]:ubyte ^ d;
+    e = a + (c = c + 1);
+    d = e[0]:ubyte;
+    if (d) continue L_c;
+  }
+  a_c(a);
+  goto B_a;
+  label B_b:
+  a_b();
+  label B_a:
+  g_a = a + 32;
+}
+
+export function m(a:int, b:int):int {
+  a_e();
+  return 0;
+}
+
+export function l():int {
+  return 1587
+}
+
+export function k():int {
+  return 1495
+}
+
+export function j():int {
+  return 1325
+}
+
+export function q(a:int):int {
+  a = g_a - a & -16;
+  g_a = a;
+  return a;
+}
+
+export function p(a:int) {
+  g_a = a
+}
+
+export function o():int {
+  return g_a
+}
+
+export function r(a:int):int {
+  var i:int_ptr;
+  var c:int;
+  var k:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var h:int;
+  var j:int_ptr;
+  var i:int_ptr;
+  var i:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var f:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var f:int_ptr;
+  var f:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var h:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var h:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var c:int;
+  var h:int;
+  var c:int;
+  var b:int_ptr;
+  var h:int;
+  var b:int_ptr;
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var f:int_ptr;
+  var j:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var i:int_ptr;
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var i:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var g:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var h:int;
+  var i:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var g:int;
+  var i:int_ptr;
+  var i:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var j:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var f:int_ptr;
+  var i:int_ptr;
+  var f:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var f:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var g:int;
+  var h:int;
+  var f:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var i:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var j:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var c:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var i:int_ptr;
+  var f:int_ptr;
+  var h:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var h:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var h:int;
+  var c:int;
+  var f:int_ptr;
+  var h:int;
+  var h:int;
+  var h:int;
+  var f:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var h:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var c:int;
+  var h:int;
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var h:int;
+  var b:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var j:int_ptr;
+  var i:int_ptr;
+  var c:int;
+  var c:int;
+  var c:int;
+  var f:int_ptr;
+  var j:int_ptr;
+  var i:int_ptr;
+  var i:int_ptr;
+  var j:int_ptr;
+  var f:int_ptr;
+  var h:int;
+  var g:int;
+  var c:int;
+  var g:int;
+  var f:int_ptr;
+  var g:int;
+  var c:int;
+  var g:int;
+  var g:int;
+  var f:int_ptr;
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var f:int_ptr;
+  var f:int_ptr;
+  var f:int_ptr;
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var f:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var f:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var i:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var i:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var h:int;
+  var c:int;
+  var h:int;
+  var f:int_ptr;
+  var f:int_ptr;
+  var g:int;
+  var c:int;
+  var c:int;
+  var g:int;
+  var c:int;
+  var c:int;
+  var c:int;
+  var b:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var c:int;
+  var c:int;
+  var g:int;
+  var g:int;
+  var g:int;
+  var c:int;
+  var g:int;
+  var c:int;
+  var c:int;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var g:int;
+  var g:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var g:int;
+  var g:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var g:int;
+  var g:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var g:int;
+  var g:int;
+  var g:int;
+  var g:int;
+  var f:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var h:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var h:int;
+  var c:int;
+  var c:int;
+  var c:int;
+  var c:int;
+  var f:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var h:int;
+  var c:int;
+  var c:int;
+  var h:int;
+  var c:int;
+  var h:int;
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var c:int;
+  var c:int;
+  var h:int;
+  var h:int;
+  var h:int;
+  var c:int;
+  var h:int;
+  var h:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var h:int;
+  var c:int;
+  var b:int_ptr;
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var h:int;
+  var h:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var h:int;
+  var h:int;
+  var c:int;
+  var h:int;
+  var h:int;
+  var h:int;
+  var h:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var g:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var g:int;
+  var g:int;
+  var g:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var g:int;
+  var j:int_ptr;
+  var c:int;
+  var h:int;
+  var c:int;
+  var h:int;
+  var h:int;
+  var h:int;
+  var c:int;
+  var h:int;
+  var i:int_ptr;
+  var i:int_ptr;
+  var i:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var i:int_ptr;
+  var c:int;
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var j:int_ptr;
+  var c:int;
+  var f:int_ptr;
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var i:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var i:int_ptr;
+  var g:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var g:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var c:int;
+  var c:int;
+  var g:int;
+  var g:int;
+  var g:int;
+  var c:int;
+  var g:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var g:int;
+  var g:int;
+  var j:int_ptr;
+  var b:int_ptr;
+  var j:int_ptr;
+  var c:int;
+  var g:int;
+  var g:int;
+  var c:int;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var c:int;
+  var i:int_ptr;
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var c:int;
+  var c:int;
+  var i:int_ptr;
+  var c:int;
+  var g:int;
+  var g:int;
+  var b:int_ptr;
+  var g:int;
+  var g:int;
+  var g:int;
+  var g:int;
+  var b:int_ptr;
+  var g:int;
+  var b:int_ptr;
+  var g:int;
+  var g:int;
+  var g:int;
+  var b:int_ptr;
+  var g:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var l:int_ptr;
+  var b:int_ptr;
+  var c:int;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var g:int;
+  var c:int;
+  var l:int_ptr;
+  var l:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var l:int_ptr;
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var b:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var i:int_ptr;
+  var b:int_ptr;
+  var b:int_ptr;
+  var i:int_ptr;
+  var j:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var j:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var k:int;
+  var k:int;
+  var f:int_ptr;
+  var f:int_ptr;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var c:int;
+  var c:int;
+  var d:{ a:int, b:int, c:int, d:int, e:int, f:int, g:int, h:int }
+  var c:int;
+  var j:int_ptr;
+  var e:{ a:int, b:int, c:int, d:int, e:int }
+  var b:int_ptr;
+  var m:int = g_a - 16;
+  g_a = m;
+  if (a <= 244) {
+    f = 1732[0]:int;
+    b = f >> (c = (i = select_if(16, a + 11 & -8, a < 11)) >> 3);
+    if (b & 3) {
+      d = ((b ^ -1) & 1) + c;
+      b = d << 3;
+      e = (b + 1780)[0]:int;
+      a = e + 8;
+      c = e.c;
+      if (c == (b = b + 1772)) {
+        1732[0]:int = f & -2 << d;
+        goto B_o;
+      }
+      1748[0]:int;
+      c[3]:int = b;
+      b[2] = c;
+      label B_o:
+      e.b = (b = d << 3) | 3;
+      b = b + e;
+      b[1] = b[1] | 1;
+      goto B_a;
+    }
+    if (i <= (k = 1740[0]:int)) goto B_l;
+    if (b) {
+      a = 2 << c;
+      a = (a | 0 - a) & b << c;
+      a = (a & 0 - a) - 1;
+      b = a >> (c = a >> 12 & 16);
+      a = b >> 5 & 8;
+      d = 
+        ((((a | c) | (a = (b = b >> a) >> 2 & 4)) | (a = (b = b >> a) >> 1 & 2)) | 
+         (a = (b = b >> a) >> 1 & 1)) + 
+        (b >> a);
+      a = d << 3;
+      e = (a + 1780)[0]:int;
+      b = e.c;
+      if (b == (a = a + 1772)) {
+        1732[0]:int = (f = f & -2 << d);
+        goto B_r;
+      }
+      1748[0]:int;
+      b[3] = a;
+      a[2]:int = b;
+      label B_r:
+      a = e + 8;
+      e.b = i | 3;
+      c = e + i;
+      c[1]:int = (d = (b = d << 3) - i) | 1;
+      (b + e)[0]:int = d;
+      if (k) {
+        b = k >> 3;
+        h = (b << 3) + 1772;
+        e = 1752[0]:int;
+        b = {
+              if (eqz(f & (b = 1 << b))) {
+                1732[0]:int = b | f;
+                h;
+                goto B_u;
+              }
+              h[2]:int;
+              label B_u:
+            }
+        h[2]:int = e;
+        b[3] = e;
+        e.d = h;
+        e.c = b;
+      }
+      1752[0]:int = c;
+      1740[0]:int = d;
+      goto B_a;
+    }
+    g = 1736[0]:int;
+    if (eqz(g)) goto B_l;
+    a = (g & 0 - g) - 1;
+    b = a >> (c = a >> 12 & 16);
+    a = b >> 5 & 8;
+    b = 
+      ((((((a | c) | (a = (b = b >> a) >> 2 & 4)) | (a = (b = b >> a) >> 1 & 2)) | 
+         (a = (b = b >> a) >> 1 & 1)) + 
+        (b >> a) << 
+        2) + 
+       2036)[0]:int;
+    e = (b[1] & -8) - i;
+    c = b;
+    loop L_w {
+      a = c[4]:int;
+      if (eqz(a)) {
+        a = c[5]:int;
+        if (eqz(a)) goto B_x;
+      }
+      c = (a[1]:int & -8) - i;
+      e = select_if(c, e, c = c < e);
+      b = select_if(a, b, c);
+      c = a;
+      continue L_w;
+      label B_x:
+    }
+    j = b + i;
+    if (j <= b) goto B_k;
+    l = b[6];
+    if (b != (d = b[3])) {
+      a = b[2];
+      if (a >= 1748[0]:int) { a[3]:int }
+      a[3]:int = d;
+      d.c = a;
+      goto B_b;
+    }
+    c = b + 20;
+    a = c[0]:int;
+    if (eqz(a)) {
+      a = b[4];
+      if (eqz(a)) goto B_j;
+      c = b + 16;
+    }
+    loop L_ca {
+      h = c;
+      d = a;
+      c = d + 20;
+      a = c[0]:int;
+      if (a) continue L_ca;
+      c = d + 16;
+      a = d.e;
+      if (a) continue L_ca;
+    }
+    h[0]:int = 0;
+    goto B_b;
+  }
+  i = -1;
+  if (a > -65) goto B_l;
+  a = a + 11;
+  i = a & -8;
+  j = 1736[0]:int;
+  if (eqz(j)) goto B_l;
+  f = 31;
+  e = 0 - i;
+  if ({
+        if (i <= 16777215) {
+          a = a >> 8;
+          a = a << (c = a + 1048320 >> 16 & 8);
+          a = a << (b = a + 520192 >> 16 & 4);
+          a = ((a << (a = a + 245760 >> 16 & 2)) >> 15) - ((b | c) | a);
+          f = (a << 1 | (i >> a + 21 & 1)) + 28;
+        }
+        c = ((f << 2) + 2036)[0]:int;
+        eqz(c);
+        label B_ga:
+      }) {
+    a = 0;
+    goto B_fa;
+  }
+  a = 0;
+  b = i << select_if(0, 25 - (f >> 1), f == 31);
+  loop L_ja {
+    h = (c[1]:int & -8) - i;
+    if (h >= e) goto B_ka;
+    d = c;
+    e = h;
+    if (e) goto B_ka;
+    e = 0;
+    a = c;
+    goto B_ea;
+    label B_ka:
+    a = 
+      select_if(
+        select_if(a, h = c[5]:int, h == (c = (c + (b >> 29 & 4))[4]:int)),
+        a,
+        h);
+    b = b << 1;
+    if (c) continue L_ja;
+  }
+  label B_fa:
+  if (eqz(a | d)) {
+    a = 2 << f;
+    a = (a | 0 - a) & j;
+    if (eqz(a)) goto B_l;
+    a = (a & 0 - a) - 1;
+    b = a >> (c = a >> 12 & 16);
+    a = b >> 5 & 8;
+    a = 
+      ((((((a | c) | (a = (b = b >> a) >> 2 & 4)) | (a = (b = b >> a) >> 1 & 2)) | 
+         (a = (b = b >> a) >> 1 & 1)) + 
+        (b >> a) << 
+        2) + 
+       2036)[0]:int;
+  }
+  if (eqz(a)) goto B_da;
+  label B_ea:
+  loop L_ma {
+    b = (a[1]:int & -8) - i;
+    c = b < e;
+    e = select_if(b, e, c);
+    d = select_if(a, d, c);
+    b = a[4]:int;
+    a = if (b) { b } else { a[5]:int }
+    if (a) continue L_ma;
+  }
+  label B_da:
+  if (eqz(d)) goto B_l;
+  if (e >= 1740[0]:int - i) goto B_l;
+  g = d + i;
+  if (g <= d) goto B_k;
+  f = d.g;
+  if (d != (b = d.d)) {
+    a = d.c;
+    if (a >= 1748[0]:int) { a[3]:int }
+    a[3]:int = b;
+    b[2] = a;
+    goto B_c;
+  }
+  c = d + 20;
+  a = c[0]:int;
+  if (eqz(a)) {
+    a = d.e;
+    if (eqz(a)) goto B_i;
+    c = d + 16;
+  }
+  loop L_ra {
+    h = c;
+    b = a;
+    c = b + 20;
+    a = c[0]:int;
+    if (a) continue L_ra;
+    c = b + 16;
+    a = b[4];
+    if (a) continue L_ra;
+  }
+  h[0]:int = 0;
+  goto B_c;
+  label B_l:
+  if (i <= (c = 1740[0]:int)) {
+    d = 1752[0]:int;
+    b = c - i;
+    if (b >= 16) {
+      1740[0]:int = b;
+      1752[0]:int = (a = d + i);
+      a[1]:int = b | 1;
+      (c + d)[0]:int = b;
+      d.b = i | 3;
+      goto B_ta;
+    }
+    1752[0]:int = 0;
+    1740[0]:int = 0;
+    d.b = c | 3;
+    a = c + d;
+    a[1]:int = a[1]:int | 1;
+    label B_ta:
+    a = d + 8;
+    goto B_a;
+  }
+  if (i < (g = 1744[0]:int)) {
+    1744[0]:int = (b = g - i);
+    1756[0]:int = (a = (c = 1756[0]:int) + i);
+    a[1]:int = b | 1;
+    c[1]:int = i | 3;
+    a = c + 8;
+    goto B_a;
+  }
+  a = 0;
+  j = i + 47;
+  f = j + 
+      (b = {
+             if (2204[0]:int) {
+               2212[0]:int;
+               goto B_wa;
+             }
+             2216[0]:long@4 = -1L;
+             2208[0]:long@4 = 17592186048512L;
+             2204[0]:int = (m + 12 & -16) ^ 1431655768;
+             2224[0]:int = 0;
+             2176[0]:int = 0;
+             4096;
+             label B_wa:
+           });
+  c = f & (h = 0 - b);
+  if (c <= i) goto B_a;
+  e = 2172[0]:int;
+  if (e) {
+    d = 2164[0]:int;
+    b = d + c;
+    if (b <= d) goto B_a;
+    if (b > e) goto B_a;
+  }
+  if (2176[0]:ubyte & 4) goto B_f;
+  d = 1756[0]:int;
+  if (d) {
+    a = 2180;
+    loop L_cb {
+      if (d >= (b = a[0]:int)) { if (b + a[1]:int > d) goto B_ab }
+      a = a[2]:int;
+      if (a) continue L_cb;
+    }
+  }
+  b = f_f(0);
+  if (b == -1) goto B_g;
+  f = c;
+  d = 2208[0]:int;
+  a = d - 1;
+  if (a & b) { f = c - b + (a + b & 0 - d) }
+  if (f <= i) goto B_g;
+  if (f > 2147483646) goto B_g;
+  e = 2172[0]:int;
+  if (e) {
+    d = 2164[0]:int;
+    a = d + f;
+    if (a <= d) goto B_g;
+    if (a > e) goto B_g;
+  }
+  a = f_f(f);
+  if (a != b) goto B_za;
+  goto B_e;
+  label B_ab:
+  f = f - g & h;
+  if (f > 2147483646) goto B_g;
+  b = f_f(f);
+  if (b == a[0]:int + a[1]:int) goto B_h;
+  a = b;
+  label B_za:
+  if (i + 48 <= f) goto B_gb;
+  if (a == -1) goto B_gb;
+  b = 2212[0]:int;
+  b = b + j - f & 0 - b;
+  if (b > 2147483646) {
+    b = a;
+    goto B_e;
+  }
+  if (f_f(b) != -1) {
+    f = b + f;
+    b = a;
+    goto B_e;
+  }
+  f_f(0 - f);
+  goto B_g;
+  label B_gb:
+  b = a;
+  if (b != -1) goto B_e;
+  goto B_g;
+  label B_k:
+  unreachable;
+  label B_j:
+  d = 0;
+  goto B_b;
+  label B_i:
+  b = 0;
+  goto B_c;
+  label B_h:
+  if (b != -1) goto B_e;
+  label B_g:
+  2176[0]:int = 2176[0]:int | 4;
+  label B_f:
+  if (c > 2147483646) goto B_d;
+  b = f_f(c);
+  if (b >= (a = f_f(0))) goto B_d;
+  if (b == -1) goto B_d;
+  if (a == -1) goto B_d;
+  f = a - b;
+  if (f <= i + 40) goto B_d;
+  label B_e:
+  2164[0]:int = (a = 2164[0]:int + f);
+  if (2168[0]:int < a) { 2168[0]:int = a }
+  h = 1756[0]:int;
+  if (h) {
+    a = 2180;
+    loop L_ob {
+      if (b == (d = a[0]:int) + (c = a[1]:int)) goto B_mb;
+      a = a[2]:int;
+      if (a) continue L_ob;
+    }
+    goto B_lb;
+  }
+  a = 1748[0]:int;
+  if (eqz(select_if(a, 0, a <= b))) { 1748[0]:int = b }
+  a = 0;
+  2184[0]:int = f;
+  2180[0]:int = b;
+  1764[0]:int = -1;
+  1768[0]:int = 2204[0]:int;
+  2192[0]:int = 0;
+  loop L_qb {
+    d = a << 3;
+    (d + 1780)[0]:int = (c = d + 1772);
+    (d + 1784)[0]:int = c;
+    a = a + 1;
+    if (a != 32) continue L_qb;
+  }
+  1744[0]:int = 
+    (c = (d = f - 40) - (a = select_if(-8 - b & 7, 0, b + 8 & 7)));
+  1756[0]:int = (a = a + b);
+  a[1]:int = c | 1;
+  (b + d)[1]:int = 40;
+  1760[0]:int = 2220[0]:int;
+  goto B_kb;
+  label B_mb:
+  if (a[12]:ubyte & 8) goto B_lb;
+  if (b <= h) goto B_lb;
+  if (d > h) goto B_lb;
+  a[1]:int = c + f;
+  1756[0]:int = (c = h + (a = select_if(-8 - h & 7, 0, h + 8 & 7)));
+  1744[0]:int = (a = (b = 1744[0]:int + f) - a);
+  c[1]:int = a | 1;
+  (b + h)[1]:int = 40;
+  1760[0]:int = 2220[0]:int;
+  goto B_kb;
+  label B_lb:
+  d = 1748[0]:int;
+  if (d > b) {
+    1748[0]:int = b;
+    d = b;
+  }
+  c = b + f;
+  a = 2180;
+  loop L_yb {
+    if (c != a[0]:int) {
+      a = a[2]:int;
+      if (a) continue L_yb;
+      goto B_xb;
+    }
+  }
+  if (eqz(a[12]:ubyte & 8)) goto B_wb;
+  label B_xb:
+  a = 2180;
+  loop L_ac {
+    if (h >= (c = a[0]:int)) {
+      e = c + a[1]:int;
+      if (e > h) goto B_vb;
+    }
+    a = a[2]:int;
+    continue L_ac;
+  }
+  unreachable;
+  label B_wb:
+  a[0]:int = b;
+  a[1]:int = a[1]:int + f;
+  j = b + select_if(-8 - b & 7, 0, b + 8 & 7);
+  j[1] = i | 3;
+  f = c + select_if(-8 - c & 7, 0, c + 8 & 7);
+  c = f - j - i;
+  g = i + j;
+  if (f == h) {
+    1756[0]:int = g;
+    1744[0]:int = (a = 1744[0]:int + c);
+    g[1]:int = a | 1;
+    goto B_tb;
+  }
+  if (f == 1752[0]:int) {
+    1752[0]:int = g;
+    1740[0]:int = (a = 1740[0]:int + c);
+    g[1]:int = a | 1;
+    (a + g)[0]:int = a;
+    goto B_tb;
+  }
+  a = f[1];
+  if ((a & 3) == 1) {
+    h = a & -8;
+    if (a <= 255) {
+      d = f[2];
+      d != ((a = a >> 3) << 3) + 1772;
+      if (d == (b = f[3])) {
+        1732[0]:int = 1732[0]:int & -2 << a;
+        goto B_fc;
+      }
+      d.d = b;
+      b[2] = d;
+      goto B_fc;
+    }
+    i = f[6];
+    if (f != (b = f[3])) {
+      a = f[2];
+      if (a >= d) { a[3]:int }
+      a[3]:int = b;
+      b[2] = a;
+      goto B_ic;
+    }
+    a = f + 20;
+    e = a[0]:int;
+    if (e) goto B_lc;
+    a = f + 16;
+    e = a[0]:int;
+    if (e) goto B_lc;
+    b = 0;
+    goto B_ic;
+    label B_lc:
+    loop L_mc {
+      d = a;
+      b = e;
+      a = b + 20;
+      e = a[0]:int;
+      if (e) continue L_mc;
+      a = b + 16;
+      e = b[4];
+      if (e) continue L_mc;
+    }
+    d.a = 0;
+    label B_ic:
+    if (eqz(i)) goto B_fc;
+    if (f == (a = ((d = f[7]) << 2) + 2036)[0]:int) {
+      a[0]:int = b;
+      if (b) goto B_nc;
+      1736[0]:int = 1736[0]:int & -2 << d;
+      goto B_fc;
+    }
+    (i + select_if(16, 20, i[4] == f))[0]:int = b;
+    if (eqz(b)) goto B_fc;
+    label B_nc:
+    b[6] = i;
+    a = f[4];
+    if (a) {
+      b[4] = a;
+      a[6]:int = b;
+    }
+    a = f[5];
+    if (eqz(a)) goto B_fc;
+    b[5] = a;
+    a[6]:int = b;
+    label B_fc:
+    f = f + h;
+    c = c + h;
+  }
+  f[1] = f[1] & -2;
+  g[1]:int = c | 1;
+  (c + g)[0]:int = c;
+  if (c <= 255) {
+    a = c >> 3;
+    c = (a << 3) + 1772;
+    a = {
+          b = 1732[0]:int;
+          if (eqz(b & (a = 1 << a))) {
+            1732[0]:int = a | b;
+            c;
+            goto B_rc;
+          }
+          c[2]:int;
+          label B_rc:
+        }
+    c[2]:int = g;
+    a[3]:int = g;
+    g[3]:int = c;
+    g[2]:int = a;
+    goto B_tb;
+  }
+  a = 31;
+  if (c <= 16777215) {
+    a = c >> 8;
+    a = a << (d = a + 1048320 >> 16 & 8);
+    a = a << (b = a + 520192 >> 16 & 4);
+    a = ((a << (a = a + 245760 >> 16 & 2)) >> 15) - ((b | d) | a);
+    a = (a << 1 | (c >> a + 21 & 1)) + 28;
+  }
+  g[7]:int = a;
+  g[4]:long@4 = 0L;
+  e = (a << 2) + 2036;
+  d = 1736[0]:int;
+  if (eqz(d & (b = 1 << a))) {
+    1736[0]:int = b | d;
+    e.a = g;
+    g[6]:int = e;
+    goto B_uc;
+  }
+  a = c << select_if(0, 25 - (a >> 1), a == 31);
+  b = e.a;
+  loop L_wc {
+    d = b;
+    if ((d.b & -8) == c) goto B_ub;
+    b = a >> 29;
+    a = a << 1;
+    e = d + (b & 4);
+    b = e.e;
+    if (b) continue L_wc;
+  }
+  e.e = g;
+  g[6]:int = d;
+  label B_uc:
+  g[3]:int = g;
+  g[2]:int = g;
+  goto B_tb;
+  label B_vb:
+  1744[0]:int = 
+    (c = (d = f - 40) - (a = select_if(-8 - b & 7, 0, b + 8 & 7)));
+  1756[0]:int = (a = a + b);
+  a[1]:int = c | 1;
+  (b + d)[1]:int = 40;
+  1760[0]:int = 2220[0]:int;
+  c = select_if(h,
+                a = e + select_if(39 - e & 7, 0, e - 39 & 7) - 47,
+                a < h + 16);
+  c[1]:int = 27;
+  c[4]:long@4 = 2188[0]:long@4;
+  c[2]:long@4 = 2180[0]:long@4;
+  2188[0]:int = c + 8;
+  2184[0]:int = f;
+  2180[0]:int = b;
+  2192[0]:int = 0;
+  a = c + 24;
+  loop L_xc {
+    a[1]:int = 7;
+    b = a + 8;
+    a = a + 4;
+    if (b < e) continue L_xc;
+  }
+  if (c == h) goto B_kb;
+  c[1]:int = c[1]:int & -2;
+  h[1]:int = (e = c - h) | 1;
+  c[0]:int = e;
+  if (e <= 255) {
+    a = e >> 3;
+    c = (a << 3) + 1772;
+    a = {
+          b = 1732[0]:int;
+          if (eqz(b & (a = 1 << a))) {
+            1732[0]:int = a | b;
+            c;
+            goto B_zc;
+          }
+          c[2]:int;
+          label B_zc:
+        }
+    c[2]:int = h;
+    a[3]:int = h;
+    h[3]:int = c;
+    h[2]:int = a;
+    goto B_kb;
+  }
+  a = 31;
+  h[4]:long@4 = 0L;
+  if (e <= 16777215) {
+    a = e >> 8;
+    a = a << (c = a + 1048320 >> 16 & 8);
+    a = a << (b = a + 520192 >> 16 & 4);
+    a = ((a << (a = a + 245760 >> 16 & 2)) >> 15) - ((b | c) | a);
+    a = (a << 1 | (e >> a + 21 & 1)) + 28;
+  }
+  h[7]:int = a;
+  d = (a << 2) + 2036;
+  c = 1736[0]:int;
+  if (eqz(c & (b = 1 << a))) {
+    1736[0]:int = b | c;
+    d.a = h;
+    h[6]:int = d;
+    goto B_cd;
+  }
+  a = e << select_if(0, 25 - (a >> 1), a == 31);
+  b = d.a;
+  loop L_ed {
+    c = b;
+    if ((c[1]:int & -8) == e) goto B_sb;
+    b = a >> 29;
+    a = a << 1;
+    d = c + (b & 4);
+    b = d.e;
+    if (b) continue L_ed;
+  }
+  d.e = h;
+  h[6]:int = c;
+  label B_cd:
+  h[3]:int = h;
+  h[2]:int = h;
+  goto B_kb;
+  label B_ub:
+  a = d.c;
+  a[3]:int = g;
+  d.c = g;
+  g[6]:int = 0;
+  g[3]:int = d;
+  g[2]:int = a;
+  label B_tb:
+  a = j + 8;
+  goto B_a;
+  label B_sb:
+  a = c[2]:int;
+  a[3]:int = h;
+  c[2]:int = h;
+  h[6]:int = 0;
+  h[3]:int = c;
+  h[2]:int = a;
+  label B_kb:
+  a = 1744[0]:int;
+  if (a <= i) goto B_d;
+  1744[0]:int = (b = a - i);
+  1756[0]:int = (a = (c = 1756[0]:int) + i);
+  a[1]:int = b | 1;
+  c[1]:int = i | 3;
+  a = c + 8;
+  goto B_a;
+  label B_d:
+  1728[0]:int = 48;
+  a = 0;
+  goto B_a;
+  label B_c:
+  if (eqz(f)) goto B_fd;
+  c = d.h;
+  a = (c << 2) + 2036;
+  if (a[0]:int == d) {
+    a[0]:int = b;
+    if (b) goto B_gd;
+    1736[0]:int = (j = j & -2 << c);
+    goto B_fd;
+  }
+  (f + select_if(16, 20, f[4] == d))[0]:int = b;
+  if (eqz(b)) goto B_fd;
+  label B_gd:
+  b[6] = f;
+  a = d.e;
+  if (a) {
+    b[4] = a;
+    a[6]:int = b;
+  }
+  a = d.f;
+  if (eqz(a)) goto B_fd;
+  b[5] = a;
+  a[6]:int = b;
+  label B_fd:
+  if (e <= 15) {
+    d.b = (a = e + i) | 3;
+    a = a + d;
+    a[1]:int = a[1]:int | 1;
+    goto B_jd;
+  }
+  d.b = i | 3;
+  g[1]:int = e | 1;
+  (e + g)[0]:int = e;
+  if (e <= 255) {
+    a = e >> 3;
+    c = (a << 3) + 1772;
+    a = {
+          b = 1732[0]:int;
+          if (eqz(b & (a = 1 << a))) {
+            1732[0]:int = a | b;
+            c;
+            goto B_md;
+          }
+          c[2]:int;
+          label B_md:
+        }
+    c[2]:int = g;
+    a[3]:int = g;
+    g[3]:int = c;
+    g[2]:int = a;
+    goto B_jd;
+  }
+  a = 31;
+  if (e <= 16777215) {
+    a = e >> 8;
+    a = a << (c = a + 1048320 >> 16 & 8);
+    a = a << (b = a + 520192 >> 16 & 4);
+    a = ((a << (a = a + 245760 >> 16 & 2)) >> 15) - ((b | c) | a);
+    a = (a << 1 | (e >> a + 21 & 1)) + 28;
+  }
+  g[7]:int = a;
+  g[4]:long@4 = 0L;
+  c = (a << 2) + 2036;
+  if (eqz(j & (b = 1 << a))) {
+    1736[0]:int = b | j;
+    c[0]:int = g;
+    g[6]:int = c;
+    goto B_qd;
+  }
+  a = e << select_if(0, 25 - (a >> 1), a == 31);
+  i = c[0]:int;
+  loop L_sd {
+    b = i;
+    if ((b[1] & -8) == e) goto B_pd;
+    c = a >> 29;
+    a = a << 1;
+    c = b + (c & 4);
+    i = c[4]:int;
+    if (i) continue L_sd;
+  }
+  c[4]:int = g;
+  g[6]:int = b;
+  label B_qd:
+  g[3]:int = g;
+  g[2]:int = g;
+  goto B_jd;
+  label B_pd:
+  a = b[2];
+  a[3]:int = g;
+  b[2] = g;
+  g[6]:int = 0;
+  g[3]:int = b;
+  g[2]:int = a;
+  label B_jd:
+  a = d + 8;
+  goto B_a;
+  label B_b:
+  if (eqz(l)) goto B_td;
+  c = b[7];
+  a = (c << 2) + 2036;
+  if (a[0]:int == b) {
+    a[0]:int = d;
+    if (d) goto B_ud;
+    1736[0]:int = g & -2 << c;
+    goto B_td;
+  }
+  (l + select_if(16, 20, l[4] == b))[0]:int = d;
+  if (eqz(d)) goto B_td;
+  label B_ud:
+  d.g = l;
+  a = b[4];
+  if (a) {
+    d.e = a;
+    a[6]:int = d;
+  }
+  a = b[5];
+  if (eqz(a)) goto B_td;
+  d.f = a;
+  a[6]:int = d;
+  label B_td:
+  if (e <= 15) {
+    b[1] = (a = e + i) | 3;
+    a = a + b;
+    a[1]:int = a[1]:int | 1;
+    goto B_xd;
+  }
+  b[1] = i | 3;
+  j[1] = e | 1;
+  (e + j)[0]:int = e;
+  if (k) {
+    a = k >> 3;
+    d = (a << 3) + 1772;
+    c = 1752[0]:int;
+    a = {
+          a = 1 << a;
+          if (eqz(a & f)) {
+            1732[0]:int = a | f;
+            d;
+            goto B_ae;
+          }
+          d.c;
+          label B_ae:
+        }
+    d.c = c;
+    a[3]:int = c;
+    c[3]:int = d;
+    c[2]:int = a;
+  }
+  1752[0]:int = j;
+  1740[0]:int = e;
+  label B_xd:
+  a = b + 8;
+  label B_a:
+  g_a = m + 16;
+  return a;
+}
+
+export function i():int {
+  return 1024
+}
+
