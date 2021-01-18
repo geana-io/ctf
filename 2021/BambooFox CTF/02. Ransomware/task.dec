@@ -1,0 +1,232 @@
+magic b'550d0d0a'
+moddate b'00000000' (Thu Jan  1 01:00:00 1970)
+source_size: 1610633604
+unknown field: a4010000
+
+>>> code
+name '<module>'
+argcount 0
+varnames ()
+stacksize 4
+nlocals 0
+names ('__import__', 'get', 'text', 'encode')
+freevars ()
+cellvars ()
+flags 0040
+consts
+
+    >>> code {{{
+    name '<lambda>'
+    argcount 3
+    varnames ('data', 'key', 'iv')
+    stacksize 6
+    nlocals 3
+    names ('len', 'open', 'read', '__import__', 'Cipher', 'AES')
+    freevars ()
+    cellvars ()
+    flags 0043
+    consts
+        None
+        0
+
+        >>> code encrypt {{{
+        name 'encrypt'
+        argcount 4
+        varnames ('key', 'iv', 'data', 'AES')
+        stacksize 7
+        nlocals 4
+        names ('open', 'write', 'new', 'MODE_CBC', 'encrypt')
+        freevars ()
+        cellvars ()
+        flags 0053
+        consts
+            None
+            'flag.enc'
+            'wb'
+
+            >>> code pad {{{
+            name 'pad'
+            argcount 1
+            varnames ('x',)
+            stacksize 5
+            nlocals 1
+            names ('len',)
+            freevars ()
+            cellvars ()
+            flags 0053
+            consts
+                None
+                b'\x00'
+                16
+            disassembly {{{
+  2           0 LOAD_FAST                0 (x)
+              2 LOAD_CONST               1 (b'\x00')
+              4 LOAD_CONST               2 (16)
+              6 LOAD_GLOBAL              0 (len)
+              8 LOAD_FAST                0 (x)
+             10 CALL_FUNCTION            1
+             12 LOAD_CONST               2 (16)
+             14 BINARY_MODULO
+             16 BINARY_SUBTRACT
+             18 BINARY_MULTIPLY
+             20 BINARY_ADD
+             22 RETURN_VALUE
+            }}}
+            decompiled {{{
+                def pad(x):
+                    return x + b'\x00' * (16 - (len(x) % 16))
+            }}}
+            <<< endcode }}}
+
+            '<lambda>.<locals>.<lambda>.<locals>.<lambda>'
+        disassembly {{{
+  2           0 LOAD_GLOBAL              0 (open)
+              2 LOAD_CONST               1 ('flag.enc')
+              4 LOAD_CONST               2 ('wb')
+              6 CALL_FUNCTION            2
+              8 LOAD_METHOD              1 (write)
+             10 LOAD_FAST                3 (AES)
+             12 LOAD_METHOD              2 (new)
+             14 LOAD_FAST                0 (key)
+             16 LOAD_FAST                3 (AES)
+             18 LOAD_ATTR                3 (MODE_CBC)
+             20 LOAD_FAST                1 (iv)
+             22 CALL_METHOD              3
+             24 LOAD_METHOD              4 (encrypt)
+             26 LOAD_CONST               3 (<code object <lambda> at 0x7f7fe929cf50, file "task.py", line 2>)
+             28 LOAD_CONST               4 ('<lambda>.<locals>.<lambda>.<locals>.<lambda>')
+             30 MAKE_FUNCTION            0
+             32 LOAD_FAST                2 (data)
+             34 CALL_FUNCTION            1
+             36 CALL_METHOD              1
+             38 CALL_METHOD              1
+             40 RETURN_VALUE
+        }}}
+        decompiled {{{
+            def encrypt(key, iv, data, AES):
+                f = open('flag.enc', 'wb')
+                padded_data = pad(data)
+                cipher = AES.new(key, AES.MODE_CBC, iv)
+                encrypted_data = cipher.encrypt(padded_data)
+                f.write(encrypted_data)
+        }}}
+        <<< endcode }}}
+
+        '<lambda>.<locals>.<lambda>'
+        16
+        'flag.png'
+        'rb'
+        'Crypto.Cipher.AES'
+
+        >>> code remove {{{
+        name 'remove'
+        argcount 1
+        varnames ('fn',)
+        stacksize 3
+        nlocals 1
+        names ('__import__', 'remove')
+        freevars ()
+        cellvars ()
+        flags 0053
+        consts
+            None
+            'os'
+        disassembly {{{
+  2           0 LOAD_GLOBAL              0 (__import__)
+              2 LOAD_CONST               1 ('os')
+              4 CALL_FUNCTION            1
+              6 LOAD_METHOD              1 (remove)
+              8 LOAD_FAST                0 (fn)
+             10 CALL_METHOD              1
+             12 RETURN_VALUE
+        }}}
+        decompiled {{{
+            def remove(fn):
+                import os
+                os.remove(fn)
+        }}}
+        <<< endcode }}}
+
+        'task.py'
+    disassembly {{{
+  2           0 LOAD_GLOBAL              0 (len)
+              2 LOAD_FAST                0 (data)
+              4 CALL_FUNCTION            1
+              6 LOAD_CONST               1 (0)
+              8 COMPARE_OP               3 (!=)
+             10 POP_JUMP_IF_FALSE       72
+             12 LOAD_CONST               2 (<code object <lambda> at 0x7f7fe92b8030, file "task.py", line 2>)
+             14 LOAD_CONST               3 ('<lambda>.<locals>.<lambda>')
+             16 MAKE_FUNCTION            0
+             18 LOAD_FAST                0 (data)
+             20 LOAD_FAST                1 (key)
+             22 LOAD_FAST                1 (key)
+             24 LOAD_CONST               4 (16)
+             26 BINARY_ADD
+             28 BUILD_SLICE              2
+             30 BINARY_SUBSCR
+             32 LOAD_FAST                0 (data)
+             34 LOAD_FAST                2 (iv)
+             36 LOAD_FAST                2 (iv)
+             38 LOAD_CONST               4 (16)
+             40 BINARY_ADD
+             42 BUILD_SLICE              2
+             44 BINARY_SUBSCR
+             46 LOAD_GLOBAL              1 (open)
+             48 LOAD_CONST               5 ('flag.png')
+             50 LOAD_CONST               6 ('rb')
+             52 CALL_FUNCTION            2
+             54 LOAD_METHOD              2 (read)
+             56 CALL_METHOD              0
+             58 LOAD_GLOBAL              3 (__import__)
+             60 LOAD_CONST               7 ('Crypto.Cipher.AES')
+             62 CALL_FUNCTION            1
+             64 LOAD_ATTR                4 (Cipher)
+             66 LOAD_ATTR                5 (AES)
+             68 CALL_FUNCTION            4
+             70 RETURN_VALUE
+        >>   72 LOAD_CONST               8 (<code object <lambda> at 0x7f7fe92b80e0, file "task.py", line 2>)
+             74 LOAD_CONST               3 ('<lambda>.<locals>.<lambda>')
+             76 MAKE_FUNCTION            0
+             78 LOAD_CONST               9 ('task.py')
+             80 CALL_FUNCTION            1
+             82 RETURN_VALUE
+    }}}
+    decompiled {{{
+        def challenge(data, key, iv):
+            if len(data) != 0:
+                something with
+                data[key:key + 16]
+                data[iv:iv+16]
+
+    }}}
+    <<< endcode }}}
+
+    '<lambda>'
+    'requests'
+    'https://ctf.bamboofox.tw/rules'
+    99
+    153
+    None
+disassembly {{{
+  2           0 LOAD_CONST               0 (<code object <lambda> at 0x7f7fe92b8190, file "task.py", line 2>)
+              2 LOAD_CONST               1 ('<lambda>')
+              4 MAKE_FUNCTION            0
+              6 LOAD_NAME                0 (__import__)
+              8 LOAD_CONST               2 ('requests')
+             10 CALL_FUNCTION            1
+             12 LOAD_METHOD              1 (get)
+             14 LOAD_CONST               3 ('https://ctf.bamboofox.tw/rules')
+             16 CALL_METHOD              1
+             18 LOAD_ATTR                2 (text)
+             20 LOAD_METHOD              3 (encode)
+             22 CALL_METHOD              0
+             24 LOAD_CONST               4 (99)
+             26 LOAD_CONST               5 (153)
+             28 CALL_FUNCTION            3
+             30 POP_TOP
+             32 LOAD_CONST               6 (None)
+             34 RETURN_VALUE
+}}}
+<<< endcode
+
