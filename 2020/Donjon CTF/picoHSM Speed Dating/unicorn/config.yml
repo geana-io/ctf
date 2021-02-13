@@ -1,0 +1,72 @@
+---
+log_output: stdout
+log_verbosity: info
+
+emulation:
+  start: 0x0800061D # start of main
+  #end: 0x08000532 # end of handle_client
+  end: 0x08000412
+  iterations: 1
+  uc:
+    architecture: ARCH_ARM
+    mode: MODE_THUMB
+  registers:
+    UC_ARM_REG_SP: 0x20002000
+  hooks: hooks.py
+
+memory:
+  pages:
+    align: 0x10000
+    raw:
+      - data: zeros.bin
+        start: 0xE0000000
+      - data: zeros.bin
+        start: 0x40000000
+      - data: zeros.bin
+        start: 0x50000000
+    elf:
+      - data: ../firmware-mcu.elf
+  patches:
+    asm:
+      # stub configure clock
+      - data: 'mov pc, lr'
+        start: 0x08000554
+      # stub usart_t::init
+      - data: 'mov pc, lr'
+        start: 0x08000836
+      # stub debug_println
+      - data: 'mov pc, lr'
+        start: 0x08000A0C
+      # stub rand_u32
+      - data: 'mov r0, 0; mov pc, lr'
+        start: 0x08000170
+      # stub setup_network
+      - data: 'mov pc, lr'
+        start: 0x0800058C
+      # stub init_wdg
+      #- data: 'mov pc, lr'
+      #  start: 0x080005F4
+      # stub panic_f
+      - data: 'mov pc, lr'
+        start: 0x08001078
+      # stub sec_reset
+      - data: 'mov pc, lr'
+        start: 0x08000180
+      # stub usart_t::flush
+      - data: 'mov pc, lr'
+        start: 0x080008EC
+      # stub socket_t::listen
+      - data: 'mov pc, lr'
+        start: 0x08000D00
+      # stub socket_t::print
+      - data: 'mov pc, lr'
+        start: 0x08001038
+      # stub socket_t::avail
+      - data: 'mov r0, 1; mov pc, lr'
+        start: 0x08000CCC
+      # stub socket_t::read_avail
+      - data: 'mov pc, lr'
+        start: 0x08001018
+      # stub execute_command
+      - data: 'mov pc, lr'
+        start: 0x080003B0
